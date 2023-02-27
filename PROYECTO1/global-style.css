@@ -1,0 +1,179 @@
+/* PARAMETROS GLOBALES */
+:root {
+    --font-family-letra: 'Cabin', sans-serif;
+
+ /* TYPOGRAPHY */
+    --typography-color--titles: #121212;
+    --typography-color--subtitles: #91C3CE;
+    --typography-color--paragraphs: #515765;
+    --typography-color--button: white;
+
+/* BUTTON */
+    --background-color--button: #96C0CE;
+    --background-color--hover: #515765;
+
+/* MOST USED TEXT SIZE  */
+    --text-size-p: 0.9rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+/* FONDO BODY */
+
+body::before {
+    content: "";
+    background-image: url(./assets/image/Fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 10%;
+}
+
+a {
+    color: var(--typography-color--titles)
+}
+
+/* CARACTERÍSTICAS FLEX */
+
+.rc-layout-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARACTERÍSTICAS GRID */
+.rc-layout-grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* DETALLE DE LOS BOTONES */
+
+.rc-layout-button {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.unstyle {
+    all: unset;
+}
+
+.button-layout {
+    background-color: var(--background-color--button);
+    padding: 1rem;
+    width: 7rem;
+    height: 1rem;
+    border-radius: 30px;
+    border: 1px solid white;
+    
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.button-layout:hover {
+    cursor:pointer;
+    background-color: var(--background-color--hover);
+    transition-duration: 2s;
+}
+
+h1 {
+    color: var(--typography-color--titles);
+}
+
+h2 {
+    color: var(--typography-color--titles);
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--typography-color--subtitles);
+}
+
+h4 {
+    color: var(--typography-color--subtitles);
+}
+
+p {
+    color: var(--typography-color--paragraphs);
+    text-align: center;
+    font-size: var(--text-size-p);
+    padding: 0 14%;
+}
+
+.nav-link:hover,
+.footer-nav-link:hover,
+.footer-nav-link:hover {
+    background-color: var(--typography-color--subtitles);
+    border-radius: 30px;
+    transition-duration: 2s;
+}
+
+/* LINEA DE TEXTO SECCIÓN 1 */
+
+form {
+    width: 300px;
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input {
+    width: 250px;
+    padding: 10px 10px;
+    border: 1px solid var(--background-color--button);
+    border-radius: 30px;
+    margin: 0;
+    display: inline-block;
+    color: black;
+}
+
+form input[type="submit"]{
+    width: 5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: block;
+    color: black;
+    background-color: var(--background-color--button);
+}
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+    background-color: var(--background-color--hover);
+    transition-duration: 2s;
+}
+
+.footer-copyright a:hover {
+    cursor: pointer;
+    transition-duration: 2s;
+    border-bottom: 3px solid var(--typography-color--subtitles);
+}
