@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
     
     body {
         box-sizing: border-box;
@@ -116,7 +116,7 @@
 
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 575px) {
     body {
         position: absolute;
         overflow-x: scroll;
